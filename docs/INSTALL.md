@@ -17,6 +17,17 @@ pnpm i @prisma/adapter-pg
 pnpm i -D @types/pg
 pnpm i pg
 
-npm prima init
+pnpm prima init                         // cria o diretório prisma com o schema
+cd prisma
+nano schema.prisma
 
-npm i @nestjs/passport @nestjs/jwt
+npx prisma migrate dev --name init      // roda a migrate no banco de dados
+npx prisma migrate deploy --name init   // roda as migrate em produção de forma ortimizada
+npx prisma generate                     // gera o código do prisma cliente
+npx prisma studio                       // abre o visualizador do banco de dados
+
+
+
+pnpm i @nestjs/passport @nestjs/jwt
+pnpm i -D @swc/cli @swc/core unplugin-swc
+pnpm i -D vite-tsconfig-paths

@@ -3,8 +3,8 @@ version: '3.8'
 services:
   postgres:
     image: postgres:13
-    hostname: postgres
-    container_name: postgres
+    hostname: nest-pg
+    container_name: nest-pg
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: nestapp

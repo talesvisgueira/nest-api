@@ -1,6 +1,6 @@
-import { User } from "../../domain/user/User";
-import type { IUserRepository } from '../../../infra/repositories/IUserRepsitory';
-import { UserRequest } from "../../domain/user/UserRequest";
+import { User } from "@/core/domain/user/User";
+import type { IUserRepository } from '@/infra/repositories/IUserRepsitory';
+import { UserRequest } from "@/core/domain/user/UserRequest";
 
 
 export class UserRegisterUseCase {
